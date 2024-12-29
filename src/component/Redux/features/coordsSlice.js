@@ -1,25 +1,28 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
   latitude: null,
   longitude: null,
-  searchedCity:'',
+  searchedCity: '',
   status: false,
   error: null,
 };
 
-export const coordsFetch = createAsyncThunk("city/coordsFetch", async (city) => {
-  const response = await axios.get(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0283978172435ad5118d34fc15a1afe4`
-  );
-  return response?.data;
-});
+export const coordsFetch = createAsyncThunk(
+  'city/coordsFetch',
+  async (city) => {
+    const response = await axios.get(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1a91035cd11c47e5e66523ee814ca551`
+    );
+    return response?.data;
+  }
+);
 
 const coordsSlice = createSlice({
-  name: "coords",
+  name: 'coords',
   initialState,
-  
+
   reducers: {
     setLongitude: (state, action) => {
       state.longitude = action.payload;

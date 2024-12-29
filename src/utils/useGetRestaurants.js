@@ -13,7 +13,7 @@ const useGetRestaurants = () => {
   useEffect(() => {
     const fetchRestaurants = async () => {
       try {
-        let restaurants_api = `http://localhost:3000/restaurant-list?lat=${latitude}&long=${longitude}`;
+        let restaurants_api = `https://proxy-server-omega-ten.vercel.app/restaurant-list?lat=${latitude}&long=${longitude}`;
         const response = await axios.get(restaurants_api);
 
         const data = response.data.data?.cards;

@@ -1,6 +1,6 @@
-# Foodie: A Food Delivery Platform 🍔🍕
+# FoodHub: A Food Delivery Platform 🍔🍕
 
-Welcome to Foodie, a robust food delivery platform developed with React.js, Tailwind CSS, and various other technologies. Foodie offers a seamless food ordering experience, with access to thousands of restaurants, real-time weather information, and precise geolocation features.
+Welcome to FoodHub, a robust food delivery platform developed with React.js, Tailwind CSS, and various other technologies. FoodHub offers a seamless food ordering experience, with access to thousands of restaurants, real-time weather information, and precise geolocation features.
 
 ## Live Demo 🚀
 
@@ -45,4 +45,4 @@ Dive into the codebase to understand how custom hooks and Redux Toolkit are used
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Feel free to explore and enhance the Foodie project. We hope you find it useful and enjoy working with it! If you have any questions or issues, please don't hesitate to reach out.
+Feel free to explore and enhance the FoodHub project. We hope you find it useful and enjoy working with it! If you have any questions or issues, please don't hesitate to reach out.
