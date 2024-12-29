@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="gap-2 mt-5 md:m-8 md:mt-10 about-scroll">
       <h1 className="text-lg md:text-2xl font-semibold mb-3">
-        Welcome to Foodie!
+        Welcome to FoodHub!
       </h1>
       <ul className="flex flex-col gap-3 md:gap-4 mb-3 text-sm md:text-xl font-medium">
         <li className="">
