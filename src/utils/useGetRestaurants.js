@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { useSelector } from "react-redux";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 const useGetRestaurants = () => {
   const [restaurantData, setRestaurantData] = useState({
     restaurants: [],
-    restaurantError: "",
+    restaurantError: '',
   });
 
   const { latitude, longitude } = useSelector((store) => store.coords);
@@ -13,7 +13,7 @@ const useGetRestaurants = () => {
   useEffect(() => {
     const fetchRestaurants = async () => {
       try {
-        let restaurants_api = `https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`;
+        let restaurants_api = `http://localhost:3000/restaurant-list?lat=${latitude}&long=${longitude}`;
         const response = await axios.get(restaurants_api);
 
         const data = response.data.data?.cards;
@@ -30,7 +30,7 @@ const useGetRestaurants = () => {
           }));
         }
       } catch (error) {
-        console.error("Error fetching data:", error.message);
+        console.error('Error fetching data:', error.message);
         setRestaurantData((prevData) => ({
           restaurantError: error.message || prevData.restaurantError,
         }));

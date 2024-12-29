@@ -38,14 +38,14 @@ const Menu = () => {
     dispatch(getTotals());
   }, [cartItems, dispatch]);
 
-  const restaurantImg = `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/${cloudinaryImageId}`;
+  const restaurantImg = `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`;
 
   return (
     <div className="lg:mx-40 md:mt-5 relative">
       {cartItems.length > 0 ? (
         <NavLink to="/cart">
           <div
-            className="font-medium absolute bg-green-200 text-black hover:bg-green-700 rounded hover:text-white p-2 bottom-[70px] left-1/2 text-xs md:text-sm
+            className="font-medium absolute bg-orange-200 text-black hover:bg-orange-600 rounded hover:text-white p-2 bottom-[70px] left-1/2 text-xs md:text-sm
         transform -translate-x-1/2 hover:shadow-md transition-all cursor-pointer z-50"
           >
             <p>{cartItems.length} Items | View Cart</p>
@@ -77,8 +77,8 @@ const Menu = () => {
 
               <div className="flex gap-2">
                 <div className="flex items-center gap-2 w-fit bg-slate-200 px-1 rounded">
-                  <IoStar className="text-green-700" />
-                  <p className="text-green-700 font-bold">{avgRating}</p>
+                  <IoStar className="text-orange-600" />
+                  <p className="text-orange-600 font-bold">{avgRating}</p>
                 </div>
                 <p>({totalRatingsString})</p>
               </div>
@@ -97,10 +97,10 @@ const Menu = () => {
             <div className="flex gap-2 items-center">
               <input
                 placeholder="search menu.."
-                className="border-green-600 w-full md:w-fit border p-1 rounded px-2 focus:outline-none hover:border-green-700"
+                className="border-orange-600 w-full md:w-fit border p-1 rounded px-2 focus:outline-none hover:border-orange-600"
                 onChange={(e) => setMenuSearchInput(e.target.value)}
               />
-              <HiSearch className="text-2xl text-green-700" />
+              <HiSearch className="text-2xl text-orange-600" />
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ const Menu = () => {
 
       <div className="flex justify-center font-medium items-center py-2 mt-4 px-4 mx-auto w-fit text-lg ">
         Made with &nbsp;
-        <BsFillSuitHeartFill className="text-green-700" />
+        <BsFillSuitHeartFill className="text-orange-600" />
         &nbsp; by&nbsp;
         <a
           href="https://github.com/jaydeep4321?tab=repositories"

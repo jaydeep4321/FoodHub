@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 nav {
-  background: linear-gradient(rgba(5, 150, 0, 0.15), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(rgba(255, 119, 0, 0.409), rgba(249, 249, 248, 0));
 }
 
 .menu li a {
@@ -11,7 +11,7 @@ nav {
 }
 
 .menu li a:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -25,11 +25,11 @@ nav {
 
 .menu li a:hover,
 .menu li a:focus {
-  color: #76b974;
+  color: orange;
 }
 
 .home::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -39,7 +39,7 @@ nav {
   z-index: -2;
 }
 .home:after {
-  content: "Foodie";
+  content: 'Foodie';
   position: absolute;
   bottom: 0;
   left: 20px;
@@ -88,7 +88,7 @@ nav {
 }
 
 .active {
-  color: rgb(2, 105, 2);
+  color: rgb(248, 116, 0);
   font-weight: 700;
 }
 

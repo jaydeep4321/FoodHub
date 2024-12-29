@@ -64,9 +64,9 @@ const Cart = () => {
                     </div>
 
                     <div className="flex gap-2 w-[23%] md:w-[30%]  flex-col md:flex-row items-center">
-                      <div className="border-green-200 rounded shadow mx-auto text-xs md:text-base">
+                      <div className="border-orange-200 rounded shadow mx-auto text-xs md:text-base">
                         <button
-                          className="text-lg px-2 hover:text-green-700 "
+                          className="text-lg px-2 hover:text-orange-600 "
                           onClick={() => dispatch(descreaseCartItem(item))}
                         >
                           -
@@ -75,7 +75,7 @@ const Cart = () => {
                           {item.itemCount}
                         </span>
                         <button
-                          className="font-medium px-2 hover:text-green-700"
+                          className="font-medium px-2 hover:text-orange-600"
                           onClick={() => dispatch(addToCart(item))}
                         >
                           +
@@ -102,7 +102,7 @@ const Cart = () => {
           </div>
 
           <div className="flex flex-col lg:w-2/5 ">
-            <div className="p-4 text-center bg-green-100  h-fit">
+            <div className="p-4 text-center bg-orange-100  h-fit">
               <div className="font-medium text-xl ">
                 <div className="flex gap-2 mb-2">
                   <img
@@ -131,7 +131,7 @@ const Cart = () => {
               </div>
 
               <button
-                className="bg-green-600 text-white p-2 w-full mt-3 hover:shadow-xl shadow-md transition-all"
+                className="bg-orange-600 text-white p-2 w-full mt-3 hover:shadow-xl shadow-md transition-all"
                 onClick={() => alert('Order Successful 🤤😜')}
               >
                 Checkout
@@ -140,7 +140,7 @@ const Cart = () => {
 
             <div className="grid grid-cols-2 gap-3 mt-3">
               <button
-                className="bg-green-100 p-2 text-black hover:bg-green-600 hover:shadow-md hover:text-white transition-all shadow text-sm md:text-base"
+                className="bg-orange-100 p-2 text-black hover:bg-orange-600 hover:shadow-md hover:text-white transition-all shadow text-sm md:text-base"
                 onClick={() => goBack()}
               >
                 Continue Ordering
@@ -158,15 +158,17 @@ const Cart = () => {
       ) : (
         <div className="mt-10 flex items-center justify-center flex-col gap-4">
           <img src={CartImg} className="md:w-[30%]" alt="cart" />
-          <p className="text-xl font-bold text-green-700">Your Cart is Empty</p>
-          <button className="hover:shadow-xl capitalize transition-all p-2 px-4 bg-green-700 rounded w-[fit-content] text-white text-sm font-bold">
+          <p className="text-xl font-bold text-orange-600">
+            Your Cart is Empty
+          </p>
+          <button className="hover:shadow-xl capitalize transition-all p-2 px-4 bg-orange-600 rounded w-[fit-content] text-white text-sm font-bold">
             <NavLink to="/restaurants">See Restaurants Near You!</NavLink>
           </button>
         </div>
       )}
       <div className="flex justify-center font-medium items-center py-2 mt-4 px-4 mx-auto w-fit text-lg ">
         Made with &nbsp;
-        <BsFillSuitHeartFill className="text-green-700" />
+        <BsFillSuitHeartFill className="text-orange-600" />
         &nbsp; by&nbsp;
         <a
           href="https://github.com/jaydeep4321?tab=repositories"

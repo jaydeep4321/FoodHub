@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Search = ({ setCity, searchRestaurants, city }) => {
   return (
@@ -12,7 +12,7 @@ const Search = ({ setCity, searchRestaurants, city }) => {
 
       <button
         onClick={() => searchRestaurants()}
-        className="p-2 px-4 bg-green-700 rounded w-[fit-content] text-white text-sm font-bold"
+        className="p-2 px-4 bg-orange-600 rounded w-[fit-content] text-white text-sm font-bold"
       >
         Search
       </button>

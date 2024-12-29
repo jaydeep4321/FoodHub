@@ -68,7 +68,7 @@ const Restaurants = () => {
 
         {searchedCity !== '' ? (
           <div className="flex items-center gap-1">
-            <MdLocationPin className="text-2xl text-green-700" />
+            <MdLocationPin className="text-2xl text-orange-600" />
             <p className="text-2xl  font-bold">{searchedCity}</p>
           </div>
         ) : (
@@ -103,7 +103,7 @@ const Restaurants = () => {
 
       <div className="flex justify-center font-medium items-center mt-5 py-2 px-4 mx-auto w-fit text-lg ">
         Made with &nbsp;
-        <BsFillSuitHeartFill className="text-green-700" />
+        <BsFillSuitHeartFill className="text-orange-600" />
         &nbsp; by&nbsp;
         <a
           href="https://github.com/jaydeep4321?tab=repositories"

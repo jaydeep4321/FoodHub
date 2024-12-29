@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import { useSelector } from "react-redux";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useSelector } from 'react-redux';
 
 const useGetRestaurantMenu = (id) => {
   const [data, setData] = useState({
     menu: [],
     restaurantInfo: [],
-    menuError: "",
+    menuError: '',
   });
 
   const { latitude, longitude } = useSelector((store) => store.coords);
@@ -15,7 +15,7 @@ const useGetRestaurantMenu = (id) => {
   useEffect(() => {
     const fetchRestaurantMenu = async () => {
       try {
-        let restaurantmenu_api = `https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${latitude}&lng=${longitude}&restaurantId=${id}&submitAction=ENTER`;
+        let restaurantmenu_api = `http://localhost:3000/restaurantmenu-list?lat=${latitude}&&long=${longitude}&&id=${id}`;
 
         const response = await axios.get(restaurantmenu_api);
 
