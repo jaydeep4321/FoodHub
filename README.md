@@ -4,11 +4,11 @@ Welcome to FoodHub, a robust food delivery platform developed with React.js, Tai
 
 ## Live Demo 🚀
 
-## [Live]() // add live at..
+## [https://food-hub-liard-seven.vercel.app/restaurants]()
 
 <br>
 
-![image]() // add production image
+![https://github.com/jaydeep4321/FoodHub/blob/main/src/img/Project3.png]()
 
 </br>
 
